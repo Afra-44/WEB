@@ -48,7 +48,7 @@
       background-size: 128px 128px;
     }
     .title{
-      font-size: clamp(2.4rem, 3vw, 2.2rem);
+      font-size: clamp(2.5rem, 5vw, 4.5rem);
       font-weight: 700; letter-spacing: -0.04em; line-height: 1.1;
       margin-bottom: 24px;
     }
@@ -71,7 +71,7 @@
       box-shadow: 0 1px 0 var(--border);
     }
     .nav-inner {
-      display: flex; justify-content: space-around;
+      display: flex; justify-content: space-between;
        margin: 0 auto; padding: 0 12px;
     }
     .nav-logo {
@@ -281,7 +281,7 @@
 
     .service .services .service-card{
       box-sizing: border-box;
-      padding: 2.5vw;
+      padding: 17px 27px;
       margin: 5px;
       background: transparent;
       border-radius: var(--radius-lg);
@@ -295,6 +295,7 @@
       font-weight: 700;
     }
     .service-card p{
+      margin-top: 5px;
       color: var(--text-2);
     }
    
@@ -526,10 +527,11 @@
       .about-visual{ max-width: 80%; }
       .footer-grid { grid-template-columns: 1fr 1fr; }
       .cta-inner { flex-direction: column; padding: 56px 40px; }
-      .title{ font-size: ;}
+      
     }
     @media (max-width: 768px) {
       .container { padding: 0 20px; }
+      .nav-inner { width: 100%;}
       .nav-links, .nav-cta { display: none; }
       .nav-hamburger { display: flex; }
       .footer-grid { grid-template-columns: 1fr; }

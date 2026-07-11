@@ -114,8 +114,8 @@
     </div>
     <!-- ***** Main Banner Area End ***** -->
     
-     <div class="browse align-items-center ">
-        <div class="container">
+    <div class="browse align-items-center ">
+       <div class="container">
         <div class="row">
             <div class="align-items-center mx-auto text-center">
                 <div class="section-heading">
@@ -124,42 +124,42 @@
                     <p class="subtext">From sizzling burgers to exotic world cuisines - find your favourite in our menu</p>
                 </div>
             </div>
-            </div>
+        </div>
         <div class="row box align-items-center d-flex flex-wrap justify-content-center">
            <ul>
             <li class="rounded-5 text-center ">
                 <a href="#tabs-1">
                 <img class="rounded-circle m-2" src="assets/images/burger.jpg" alt="">
-                <p class="p-2">All items  <br><span class=""> 24 items</span></p>
+                <p>All items  <br><span class=""> 24 items</span></p>
                 </a>
             </li>
             <li class="rounded-5 text-center">
                 <a href="#burger">
                 <img class="rounded-circle m-2" src="assets/images/burger.jpg" alt="">
-                <p class="p-2">Burgers  <br><span class=""> 8 items</span></p>
+                <p >Burgers  <br><span class=""> 8 items</span></p>
                 </a>
             </li>
             <li class="rounded-5 text-center">
                 <a href="#chicken">
                 <img class="rounded-circle m-2" src="assets/images/chicken (1).jpg" alt="">
-                <p class="p-2">Fried Chicken  <br><span class=""> 4 items</span></p>
+                <p>Fried Chicken  <br><span class=""> 4 items</span></p>
                 </a>
             </li>
             <li class="rounded-5 text-center ">
                 <a href="#dessert">
                 <img class="rounded-circle m-2" src="assets/images/dessert (1).jpg" alt="">
-                <p class="p-2">Desserts  <br><span class=""> 3 items</span></p>
+                <p>Desserts  <br><span class=""> 3 items</span></p>
                 </a>
             </li>
             <li class="rounded-5 text-center">
                 <a href="#drinks">
                 <img class="rounded-circle m-2" src="assets/images/drink.jpg" alt="">
-                <p class="p-2">Drinks  <br><span class=""> 6 items</span></p>
+                <p>Drinks  <br><span class=""> 6 items</span></p>
                 </a>
             </li>
            </ul>
         </div>
-    </div>
+       </div> 
     </div>
 
     <!-- ***** About Area Starts ***** -->
@@ -173,7 +173,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-8 col-md-6 col-xs-12">
+                <div class="col-lg-8 col-md-8 col-xs-12">
                     <div class="left-text-content">
                         <div class="section-heading">
                             <h6>About Us</h6>
@@ -515,7 +515,7 @@
     </section>
     <!-- ***** Menu Area Ends ***** -->
 
-    <!-- ***** About Area Starts ***** -->
+    <!-- ***** offer Area Starts ***** -->
     <section class="section" id="offer">
         <div class="container">
             <div class="row">
@@ -540,7 +540,6 @@
             </div>
         </div>
     </section>
-    <!-- ***** Chefs Area Ends ***** -->
 
     <!-- ***** Reservation Us Area Starts ***** -->
     <section class="section" id="reservation">
@@ -654,7 +653,7 @@
     <footer>
         <div class="container">
             <div class="row">
-                <div class="col-lg-4 col-xs-12">
+                <div >
                     <div class="right-text-content">
                             <ul class="social-icons">
                                 <li><a href="#"><i class="fa fa-facebook"></i></a></li>
@@ -665,7 +664,7 @@
                     </div>
                 </div>
                 
-                <div class="col-lg-4 col-xs-12">
+                <div >
                     <div class="left-text-content">
                         <p>© Copyright Smash Town Restaurant Co.                        
                     </div>
@@ -695,22 +694,6 @@
     
     <!-- Global Init -->
     <script src="assets/js/custom.js"></script>
-    <script>
-
-        $(function() {
-            var selectedClass = "";
-            $("p").click(function(){
-            selectedClass = $(this).attr("data-rel");
-            $("#portfolio").fadeTo(50, 0.1);
-                $("#portfolio div").not("."+selectedClass).fadeOut();
-            setTimeout(function() {
-              $("."+selectedClass).fadeIn();
-              $("#portfolio").fadeTo(50, 1);
-            }, 500);
-                
-            });
-        });
-
-    </script>
+    
   </body>
 </html>

@@ -658,7 +658,7 @@ banner
 }
 
 #top .left-content .inner-content {
-  position: absolute;
+  position: relative;
   margin: 1em;
 }
 
@@ -846,7 +846,8 @@ browse
    /* margin-top: 120px; */
   background-color: #ffdbbd;
   padding: 120px 0px;
-  margin : 0
+  margin : auto;
+  
 }
 .browse .section-heading h6{
   font-family:  'Dancing Script', cursive ;
@@ -863,6 +864,10 @@ browse
 }
 .browse .box ul{
   display: flex ;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  
 }
 
 .browse .box ul li{
@@ -870,7 +875,7 @@ browse
   box-shadow: #ce705135 3px 3px 23px;
   background-color: #fff1e6;
   padding: 10px 30px;
-  margin: 30px 15px;
+  margin: 30px 10px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .browse .box ul li:hover{
@@ -883,9 +888,9 @@ browse
   object-fit: cover;
   
 }
-.browse .subtext p{
-  font-weight: 500;
-  opacity: 0.5;
+.browse .subtext{
+  font-weight: 700;
+  opacity: 0.8;
   color: #7a332c;
 }
 
@@ -909,6 +914,7 @@ about
 
 #about img {
   width: 100%;
+  height: 80vh;
   overflow: hidden;
 }
 
@@ -959,8 +965,7 @@ offer
 */
 
 #offer {
-  /* margin-bottom: 20px; */
-  padding: 100px 0px 25px 0px;
+  padding: 100px 0px 45px 0px;
   position: relative;
   z-index: 9;
   line-height: 1.5;
@@ -972,7 +977,7 @@ offer
 #offer .section-heading h2 {
   color:#FFF;
   line-height: 1.1;
-  padding-right: 70px;
+  /* padding-right: 70px; */
 }
 #offer p{
   color:#bbb;
@@ -980,7 +985,9 @@ offer
 
 #offer .right-content img {
   width: 100%;
+  height: 65vh;
   overflow: hidden;
+  object-fit: cover;
   border-radius: 100px;
   position: relative;
   max-width: 440px;
@@ -1002,8 +1009,6 @@ offer
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
-  
 }
 
 
@@ -1020,6 +1025,7 @@ menu
 
 #menu .section-heading {
   margin-bottom: 70px;
+  
 }
 
 #menu .section-heading h6 {
@@ -1064,7 +1070,7 @@ menu
   display: block;
   margin: 0 auto 15px auto;
   border-radius: 30px;
-
+  object-fit: cover;
 }
 #menu #tabs ul .ui-tabs-active a {
   color: #7a332c;
@@ -1290,8 +1296,14 @@ footer {
   margin-top: 60px;
   padding: 50px 0px;
   background-color: #7a332c;
+  
 }
-
+footer .row{
+  display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
 footer .left-text-content p {
   margin-top: 5px;
   color: #fff;
@@ -1352,11 +1364,7 @@ responsive
 */
 
 @media (max-width: 992px) {
-  #top {
-    padding-top: 100px;
-    height: auto;
-  }
-  .header-area .main-nav .nav li.submenu:after {
+   .header-area .main-nav .nav li.submenu:after {
     right: 3px;
   }
   .header-area .main-nav .nav li.submenu {
@@ -1370,6 +1378,12 @@ responsive
     font-size: 14px;
     letter-spacing: 0px;
   }
+  .section-heading h2{
+    font-size:  44px;
+    line-height: 1;
+    margin-top: 10px;
+    margin-bottom: 15px;
+  }
   #top .left-content {
     text-align: center;
     padding: 25% 0px;
@@ -1378,15 +1392,15 @@ responsive
     margin-left: 0px;
     margin-top: 30px;
   }
-  #chefs .chef-item {
-    margin-bottom: 30px;
-  }
   #reservation .phone {
     margin-bottom: 60px;
   }
   #contact {
     margin-left: 0px;
     margin-top: 30px;
+  }
+  .browse .box ul li{
+    padding: 6px 14px;
   }
   #menu .tabs-content .left-list {
     margin-right: 0px;
@@ -1405,8 +1419,80 @@ responsive
   }
 }
 
-
-
+@media (max-width: 768px) {
+  .section-heading{
+    margin: 15px 0;
+  }
+  .section-heading h2{
+    font-size:  55px;
+    line-height: 1;
+    margin-top: 10px;
+    margin-bottom: 15px;
+  }
+  .browse .box ul li{
+    padding: 3px 3px;
+    margin: 10px 7px;
+  }
+  .browse img{
+    width: 70px;
+    height: 70px;
+  }
+  #offer{
+    text-align: center;
+  }
+  #offer .right-content img{
+    margin: 20px;
+  }  
+  #about .right-content {
+    margin-left: 0px;
+    margin-top: 30px;
+  }
+  
+  #menu #tabs ul li {
+  display: inline-block;
+  margin: 0px 5px;
+  }
+  #menu #tabs ul li a img{
+    width: 5.6em;
+  }
+}
+@media (max-width: 500px) {
+  .section-heading{
+    margin: 15px 0;
+  }
+  .section-heading h2{
+    font-size:  44px;
+    line-height: 1;
+    margin-top: 10px;
+    margin-bottom: 15px;
+  }
+  .browse .box ul li{
+    padding: 0px 3px;
+    margin: 10px 5px;
+  }
+  .browse img{
+    width: 55px;
+    height: 55px;
+  }
+  #offer{
+    text-align: center;
+  }
+  #offer .right-content img{
+    margin: 20px;
+  }  
+  #about .right-content {
+    margin-left: 0px;
+    margin-top: 30px;
+  }
+  
+  #menu #tabs ul li {
+  display: inline-block;
+  margin: 0px 5px;
+  }
+  #menu #tabs ul li a img{
+    width: 4.6em;
+  }
+}
 
 
 #preloader {

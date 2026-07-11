@@ -12,6 +12,11 @@
   <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
+  <div class="mobile-menu" id="mobileMenu" role="dialog" aria-modal="true" aria-label="Navigation">
+    <a href="#collection">Collection</a>
+    <a href="product.html">Store</a>
+    <a href="index.html">About Us</a>
+  </div> 
     <nav class="nav" id="mainNav" role="navigation" aria-label="Main navigation">
     <div class="nav-inner ">
       <a href="#" class="nav-logo"><img src="assets/images/logo.png" alt=""></a>
@@ -20,7 +25,9 @@
         <li>    <a href="product.html">Store</a></li>
          <li><a href="index.html">About us</a></li>
       </ul>
-     
+     <button class="nav-hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
     </div>
   </nav>
 
@@ -57,7 +64,7 @@
     </div>
     <div class="container">
     <div class="row product-all ">
-        <div class="product-card reveal reveal-delay-1" >
+        <div class="product-card sides reveal reveal-delay-1" >
           <img src="assets/images/main.jpg" alt="">
           <div class="product-note">
           <h5 class="product-name">  The voyage</h5>
@@ -66,7 +73,7 @@
           </div>
         </div>
       
-        <div class="product-card reveal reveal-delay-1">
+        <div class="product-card main reveal reveal-delay-1">
           <img src="assets/images/outifts (4).jpg" class="">
           <div class="product-note-center">
           <h5 class="product-name">  The voyage</h5>
@@ -75,7 +82,7 @@
           </div>
         </div>
     
-        <div class="product-card reveal reveal-delay-1">
+        <div class="product-card  reveal reveal-delay-1">
           <img src="assets/images/shoes (1).jpg" alt="">
           <div class="product-note">
           <h5 class="product-name">  The voyage</h5>
@@ -84,7 +91,7 @@
           </div>
         </div>
 
-        <div class="product-card reveal reveal-delay-1">
+        <div class="product-card sides reveal reveal-delay-1">
           <img src="assets/images/accessory (1).jpg" alt="">
           <div class="product-note">
           <h5 class="product-name">  The voyage</h5>
