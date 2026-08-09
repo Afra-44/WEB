@@ -196,13 +196,17 @@ if (stage){/* ── 3D CAROUSEL ── */
 
 
 ///////// Product page - grid////////
-window.addEventListener("load", () => {
-  const rowHeight = 10;
-  const gap = 24;
+window.onload = () => {
+  const grids = document.querySelectorAll('.grid');
 
-  document.querySelectorAll('.filter-card').forEach(card => {
-    const height = card.getBoundingClientRect().height;
-    const span = Math.ceil((height + gap) / (rowHeight + gap));
-    card.style.gridRowEnd = `span ${span}`;
+  grids.forEach((grid) => {
+    const masonry = new Masonry(grid, {
+      itemSelector: '.grid-item',
+      gutter: 10
+    });
+
+    imagesLoaded(grid).on('progress', () => {
+      masonry.layout();
+    });
   });
-})
+};
